@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible{
+  font-family: Verdana;
+  background-color: #813DAA;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.collapsible h4{
+  font-family: Arial;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.content_col h6{
+  font-family: Arial;
+  font-size: 20px;
+  margin: 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover{
+  background-color: #6F9CA2;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content_col{
+  padding: 15px 35px 15px 35px;
+  text-align: justify;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.collapsible:before{
+  vertical-align: bottom;
+  content: '\25B6'; /* Unicode character for "plus" sign (v) */
+  font-size: 18px;
+  color: white;
+  float: left;
+  margin-left: 5px;
+}
+
+.active_col:before{
+  content: '\25BC'; /* Unicode character for "minus" sign (>) */
+}
+
+#collapse_list{
+  width: 100%;
+  list-style-type: none;
+}
+
+#collapse_list li{
+  width: 100%;
+}
